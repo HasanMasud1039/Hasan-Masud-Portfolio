@@ -1,0 +1,33 @@
+
+.logo {
+    background-image: url('../../assets/hasan.jpg');
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+.circularText {
+    animation: rotateText 20s linear infinite;
+  }
+  .circularText span {
+    position: absolute;
+    padding: -15px;
+    left: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform-origin: 0 110px;
+  }
+  @keyframes rotateText {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
