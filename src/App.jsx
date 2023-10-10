@@ -1,13 +1,13 @@
-import { useState } from 'react'
+
+import React from "react";
+
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
-import Navbar from './Pages/Navbar/Navbar'
+import Particles from "react-particles";
 
-function App() {
 
+
+export default function App() {
   return (
-<div>My</div>
-  )
+<p>my app</p>
+  );
 }
-
-export default App

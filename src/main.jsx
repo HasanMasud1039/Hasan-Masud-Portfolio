@@ -10,7 +10,8 @@ import router from './Routes/Routes.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className=' h-screen'>
+    <div className=' h-screen w-screen'>
+      
     <RouterProvider router={router} />
     </div>
   </React.StrictMode>,

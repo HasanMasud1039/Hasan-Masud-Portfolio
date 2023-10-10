@@ -9,6 +9,7 @@ import Projects from '../HomePages/Projects';
 import Education from '../HomePages/Education';
 import Contact from '../HomePages/Contact';
 import Navbar from '../Navbar/Navbar';
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
 
 AOS.init();
 
@@ -66,6 +67,9 @@ function Home() {
           />
         </div>
       </div>
+      <div className="z-10">
+                <ParticleBackground />
+            </div>
     </div>
   );
 }
