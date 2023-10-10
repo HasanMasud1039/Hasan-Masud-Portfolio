@@ -55,13 +55,13 @@ const Projects = () => {
     return (
         <div>
             <div className='mt-8'>
-                <button className='btn btn-md font-bold text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><IoGridOutline className='text-2xl'/>Projects</button>
+                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><IoGridOutline className='text-2xl'/>Projects</button>
             </div>
             <div className="pt-[50px] pb-[90px]">
 
       {projects.map((project, index) => (
         <div key={index} data-aos="fade-up" data-aos-duration="1000" className='border-2 space-y-8 gap-8 my-8 bg-cyan-50 rounded-2xl'>
-            <p className="mt-5 text-3xl font-subtitle font-semibold text-center hover:underline">{project.name}</p>
+            <p className="mt-5 md:text-3xl font-subtitle font-semibold text-center hover:underline">{project.name}</p>
           <div className="relative">
             <img
               src={project.image}
@@ -69,17 +69,17 @@ const Projects = () => {
               className="h-[300px] lg:h-[500px] w-full object-cover object-left-top rounded-xl z-0 mt-20"
             />
             <div className="absolute top-[-45px] right-2 flex">
-              <span className="bg-black border-2 text-white hover:bg-violet-800 px-5 py-2 mx-1 text-md  font-semibold rounded-full shadow-xl">
+              <span className="bg-black border-2 text-white hover:bg-violet-800 md:px-5 px-2 py-2 mx-1 md:text-md text-sm md:font-semibold rounded-full shadow-xl">
                 <a href={project.demo} rel="noreferrer" target="_blank">
                   Live Demo
                 </a>
               </span>
-              <span className="bg-black border-2 text-white hover:bg-violet-800 px-5 py-2 mx-1 text-md  font-semibold rounded-full shadow-xl">
+              <span className="bg-black border-2 text-white hover:bg-violet-800 md:px-5 px-2 py-2 mx-1 md:text-md text-sm md:font-semibold rounded-full shadow-xl">
                 <a href={project.clientRepo} rel="noreferrer" target="_blank">
                   Client
                 </a>
               </span>
-              <span className="bg-black border-2 text-white hover:bg-violet-800 px-5 py-2 mx-1 text-md  font-semibold rounded-full shadow-xl">
+              <span className="bg-black border-2 text-white hover:bg-violet-800 md:px-5 px-2 py-2 mx-1 md:text-md text-sm md:font-semibold rounded-full shadow-xl">
                 <a href={project.serverRepo} rel="noreferrer" target="_blank">
                   Server
                 </a>
@@ -89,7 +89,7 @@ const Projects = () => {
               {project.tags.map((tag, idx) => (
                 <span
                   key={idx}
-                  className="inline-block bg-black text-white border-2  hover:bg-gray-200 hover:text-black  px-3 py-1 mx-1 my-0.5 font-semibold uppercase rounded-full"
+                  className="inline-block bg-black text-white border-2  text-sm md:text-md hover:bg-gray-200 hover:text-black  px-3 py-1 mx-1 my-0.5 md:font-semibold uppercase rounded-full"
                 >
                   {tag}
                 </span>

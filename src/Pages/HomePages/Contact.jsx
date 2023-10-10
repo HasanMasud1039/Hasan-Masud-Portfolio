@@ -29,7 +29,7 @@ const Contact = () => {
     };
     return (
         <div><div className='mt-8'>
-            <button className='btn btn-md font-bold text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
+            <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
         </div>
             <div className="pt-[60px] pb-[90px] ">
 

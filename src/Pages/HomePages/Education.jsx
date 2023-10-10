@@ -44,11 +44,11 @@ const Education = () => {
     return (
         <div>
             <div className='mt-8'>
-                <button className='btn btn-md font-bold text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaBriefcaseSolid className='text-2xl' />Education & Certification</button>
+                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaBriefcaseSolid className='text-2xl' />Education & Certification</button>
             </div>
-            <h1 className='py-6 text-3xl font-bold flex justify-center text-emerald-800 uppercase'>Education</h1>
+            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-800 uppercase'>Education</h1>
 
-            <div className='font-bold text-lg'>
+            <div className='font-bold md:text-lg'>
                 <div>
                     <ol className="border-l border-emerald-800">
                         {educations.map((education) => (
@@ -68,8 +68,8 @@ const Education = () => {
                     </ol>
                 </div>
             </div>
-            <h1 className='py-6 text-3xl font-bold flex justify-center text-emerald-800 uppercase'>Certification</h1>
-            <div className='font-bold text-lg'>
+            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-800 uppercase'>Certification</h1>
+            <div className='font-bold md:text-lg'>
                 <div>
                     <ol className="border-l border-emerald-800">
                         {certifications.map((certification) => (

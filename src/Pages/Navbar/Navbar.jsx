@@ -17,7 +17,7 @@ const Navbar = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed bg-zinc-200">
+      <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed ">
         <div className="text-2xl text-emerald-800 border border-violet-800 rounded-full space-y-5 px-5 py-8">
 
 

@@ -35,6 +35,7 @@ const Sidebar = () => {
             <a href='mailto: masud.39cu@gmail.com' className=" text-2xl text-blue-800 mb-2 text-center">
               masud.39cu@gmail.com
             </a> <br />
+            <p className="text-xl mb-7 text-center">+8801518372751</p>
             <p className="text-2xl mb-7 text-center">Dhaka, Bangladesh</p>
 
           </div>

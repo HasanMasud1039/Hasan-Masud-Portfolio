@@ -78,7 +78,7 @@ const MySkills = () => {
     return (
         <div>
             <div className='my-8'>
-                <button className='btn btn-md font-bold text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaShapesSolid className='text-2xl'/>Skills</button>
+                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaShapesSolid className='text-2xl'/>Skills</button>
             </div>
 
             <div>

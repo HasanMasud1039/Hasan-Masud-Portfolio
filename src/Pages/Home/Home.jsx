@@ -25,9 +25,9 @@ function Home() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <div className="relative rounded-2xl container mx-auto py-6 md:ml-12 ">
-      <div className="grid sm:grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-3 md:mt-8 mt-4 md:hidden block mx-auto flex justify-center px-[20%]">
+    <div className="relative rounded-2xl  container py-6 md:flex md:justify-end ">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-12 w-[80%]">
+        <div className="lg:col-span-3 md:mt-8 mt-4 md:hidden block mx-auto flex justify-center px-4">
           <Sidebar />
         </div>
 
