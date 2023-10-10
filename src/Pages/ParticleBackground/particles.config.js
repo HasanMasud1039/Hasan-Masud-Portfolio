@@ -46,7 +46,7 @@ const particlesConfig = {
     },
     particles: {
       color: {
-        value: '#1e9ce6',
+        value: '#92f7c6',
       },
       links: {
         blink: false,
