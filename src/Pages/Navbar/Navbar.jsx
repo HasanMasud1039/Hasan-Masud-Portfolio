@@ -17,15 +17,9 @@ const Navbar = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed ">
+      <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed bg-zinc-200">
         <div className="text-2xl text-emerald-800 border border-violet-800 rounded-full space-y-5 px-5 py-8">
 
-        {/* <button class="relative group px-6 py-3 bg-blue-500 text-lime-300 hover:bg-blue-700 transition duration-300">
-            <span className="hidden left-[150px] group-hover:block absolute inset-0 bg-red-300 text-blue-500  transition duration-300">
-                Your Name
-            </span>
-            Hover Me
-        </button> */}
 
           <div id="introduce" className="hover:text-primary cursor-pointer relative group">
             <a onClick={scrollToIntroduce}>
@@ -67,11 +61,6 @@ const Navbar = ({
                 Education
             </span>
           </div>
-          {/* <div id="education" className="hover:text-primary cursor-pointer">
-          <a onClick={scrollToEducation}>
-            <PiGraduationCap />
-          </a>
-        </div> */}
           <div id="contact" className="hover:text-primary cursor-pointer relative group">
             <a onClick={scrollToContact}>
               <LiaEnvelopeSolid />
@@ -87,7 +76,7 @@ const Navbar = ({
       <div className="md:hidden w-full">
         <div
           id="nav icon"
-          className="text-3xl fixed top-6 left-8"
+          className="text-4xl fixed top-6 left-8"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
@@ -95,19 +84,19 @@ const Navbar = ({
           <HiBars3 />
         </div>
         {isOpen && (
-          <div className="fixed top-0 left-0 bg-black opacity-90">
+          <div className="fixed top-0 left-0 bg-zinc-300 rounded-xl font-semibold opacity-90">
             <div>
               <div
-                className="absolute top-6 left-8 text-3xl"
+                className="absolute top-4 right-2 text-3xl"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
               >
                 <IoCloseCircleSharp />
               </div>
-              <ol className="mt-12 pr-16 px-14 py-7 text-primary text-lg leading-[40px] tracking-wide">
+              <ol className="mt-6 pr-12 px-6 py-0 text-violet-800 text-lg leading-[40px] tracking-wide">
                 <div id="introduce" className="hover:text-primary cursor-pointer">
-                  <a onClick={scrollToIntroduce}>Introduce</a>
+                  <a onClick={scrollToIntroduce}>Introduction</a>
                 </div>
                 <div id="about" className="hover:text-primary cursor-pointer">
                   <a onClick={scrollToAbout}>About</a>
@@ -119,13 +108,8 @@ const Navbar = ({
                   <a onClick={scrollToProjects}>Projects</a>
                 </div>
                 <div id="experiences" className="hover:text-primary cursor-pointer">
-                  <a onClick={scrollToExperiences}>Experiences</a>
+                  <a onClick={scrollToExperiences}>Education</a>
                 </div>
-                {/* <div id="education" className="hover:text-primary cursor-pointer">
-          <a onClick={scrollToEducation}>
-            <PiGraduationCap />
-          </a>
-        </div> */}
                 <div id="contact" className="hover:text-primary cursor-pointer">
                   <a onClick={scrollToContact}>Contact</a>
                 </div>

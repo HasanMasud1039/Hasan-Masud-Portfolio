@@ -7,10 +7,12 @@ import Home from '../Pages/Home/Home';
 
 const Main = () => {
     return (
-        <div className='main pt-8 max-w-[80%] mx-auto'>
-                    <Sidebar></Sidebar>
-            <div className='h-screen'>
-                    <Home></Home>
+        <div className='main md:pt-8 md:max-w-[80%] mx-auto md:px-2'>
+            <div className='mt-8 md:block hidden'>
+                <Sidebar></Sidebar>
+            </div>
+            <div className='h-screen w-screen'>
+                <Home></Home>
             </div>
         </div>
     );

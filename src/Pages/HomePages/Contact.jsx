@@ -78,7 +78,7 @@ const Contact = () => {
                     <input
                         type="submit"
                         value={isLoading ? 'Sending...' : 'SEND MESSAGE'}
-                        className="bg-violet-800 hover:bg-emerald-800 p-3 flex justify-center mx-auto  rounded-2xl cursor-pointer text-white font-semibold w-[30%] "
+                        className="bg-violet-800 hover:bg-emerald-800 p-3 flex justify-center mx-auto  rounded-2xl cursor-pointer text-white md:font-semibold md:w-[30%] w-[50%]"
                         disabled={isLoading}
                     />
                 </form>

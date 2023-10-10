@@ -6,14 +6,14 @@ import { LiaEnvelopeSolid } from 'react-icons/lia';
 import './Sidebar.css'
 
 const Sidebar = () => {
-  const animatedText = ' ** Hasan Masud ** Full Stack Developer ';
+  const animatedText = ' ** Hasan Masud ** Full-Stack Developer ';
   const characters = [...animatedText];
   // console.log(characters);
 
   return (
     <div>
-      <div className="bg-red-600 ">
-        <div className="border-2 border-emerald-800 rounded-2xl flex flex-col w-full lg:w-fit justify-center items-center lg:top-1/2 lg:transform lg:-translate-y-1/2 p-5 lg:p-3 lg:fixed ">
+      <div className="mt-8">
+        <div className="border-2 border-emerald-800 rounded-2xl flex flex-col w-full lg:w-fit justify-center items-center lg:top-1/2 lg:transform lg:-translate-y-1/2 md:p-5 lg:p-3 lg:fixed ">
           <div className="circle relative w-[220px] h-[220px] rounded-full flex justify-center items-center mt-5 mb-12">
             <div
               className={`logo border-2 absolute w-40 h-40 border-emerald-800 rounded-full bg-cover bg-center`}
@@ -31,8 +31,8 @@ const Sidebar = () => {
 
             </div>
           </div>
-          <div className=" space-y-4">
-            <a href='mailto: masud.39cu@gmail.com' className="text-2xl text-blue-800 mb-2 text-center">
+          <div className="px-3 space-y-4">
+            <a href='mailto: masud.39cu@gmail.com' className=" text-2xl text-blue-800 mb-2 text-center">
               masud.39cu@gmail.com
             </a> <br />
             <p className="text-2xl mb-7 text-center">Dhaka, Bangladesh</p>

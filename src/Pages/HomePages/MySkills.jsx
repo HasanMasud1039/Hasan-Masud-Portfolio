@@ -91,7 +91,7 @@ const MySkills = () => {
               data-aos-duration="1000"
             >
               {/* <img src={skill.icon} alt="skill" className="h-[100px] lg:h-[100px] w-auto my-6" /> */}
-              <div className="text-8xl  my-6">{skill.icon}</div>
+              <div className="md:text-8xl text-5xl my-6">{skill.icon}</div>
               <p className="text-violet-800 font-semibold text-lg">{skill.name}</p>
             </div>
           ))}

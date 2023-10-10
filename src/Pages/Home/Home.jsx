@@ -25,13 +25,13 @@ function Home() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <div className="relative rounded-2xl container mx-auto py-6 bg-amber-50">
+    <div className="relative rounded-2xl container mx-auto py-6 md:ml-12 ">
       <div className="grid sm:grid-cols-1 lg:grid-cols-12">
-        {/* <div className="lg:col-span-3">
+        <div className="lg:col-span-3 md:mt-8 mt-4 md:hidden block mx-auto flex justify-center px-[20%]">
           <Sidebar />
-        </div> */}
+        </div>
 
-        <div className="col-span-11 pl-0 lg:pl-16">
+        <div className="col-span-10 md:pl-2 lg:pl-16 px-4">
           <div ref={introduceRef}>
             <Introduction />
           </div>
