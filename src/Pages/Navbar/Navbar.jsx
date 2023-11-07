@@ -18,8 +18,7 @@ const Navbar = ({
   return (
     <div>
       <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed ">
-        <div className="text-2xl text-emerald-800 border border-violet-800 rounded-full space-y-5 px-5 py-8">
-
+        <div className="text-3xl text-white border border-violet-800 rounded-full space-y-5 px-5 py-8">
 
           <div id="introduce" className="hover:text-primary cursor-pointer relative group">
             <a onClick={scrollToIntroduce}>

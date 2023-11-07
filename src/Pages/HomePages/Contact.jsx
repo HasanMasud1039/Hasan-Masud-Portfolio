@@ -29,7 +29,7 @@ const Contact = () => {
     };
     return (
         <div><div className='mt-8'>
-            <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
+            <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 text-white btn-outline'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
         </div>
             <div className="pt-[60px] pb-[90px] ">
 
@@ -40,7 +40,7 @@ const Contact = () => {
                     +8801518372751
                 </h4>
                 <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="1000">
-                    <div className="flex flex-col lg:flex-row w-full px-8 gap-4">
+                    <div className="flex flex-col lg:flex-row w-full md:px-8 px-2 gap-4">
                         <div className="w-full mb-[34px] ">
                             <label className="block text-sm mb-1  tracking-wider">
                                 FULL NAME<span className="text-red-500 text-lg font-semibold">*</span>
@@ -66,7 +66,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="w-full mb-[34px] px-8">
+                    <div className="w-full mb-[34px] px-2 md:px-8">
                         <label className="block text-sm mb-1  tracking-wider">MESSAGE</label>
                         <textarea
                             name="message"

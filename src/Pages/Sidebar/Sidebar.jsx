@@ -18,7 +18,7 @@ const Sidebar = () => {
             <div
               className={`logo border-2 absolute w-40 h-40 border-emerald-800 rounded-full bg-cover bg-center`}
             ></div>
-            <div className="circularText absolute border-2 border-violet-800 rounded-full  w-full h-full transform rotate-85">
+            <div className="circularText absolute border-2  border-violet-400 rounded-full  w-full h-full transform rotate-85">
 
               {characters.map((char, index) => (
                 <span key={index} className='font-bold' style={{ transform: `rotate(${index * 9.5}deg)` }}>

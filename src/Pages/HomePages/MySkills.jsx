@@ -14,7 +14,6 @@ import {
     BiLogoTypescript,
   } from 'react-icons/bi';
   import { SiExpress, SiFigma, SiVercel } from 'react-icons/si';
-  import matlabIcon from '../../assets/matlab.png'
 
 const MySkills = () => {
     const skills = [
@@ -78,15 +77,15 @@ const MySkills = () => {
     return (
         <div>
             <div className='my-8'>
-                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 hover:text-white btn-outline'><LiaShapesSolid className='text-2xl'/>Skills</button>
+                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 text-white btn-outline'><LiaShapesSolid className='text-2xl'/>Skills</button>
             </div>
 
             <div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 ">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col bg-zinc-100 shadow-xl justify-center items-center border rounded-[60px] py-10"
+              className="flex flex-col bg-zinc-100 shadow-xl text-black justify-center items-center border rounded-[60px] py-10 "
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
