@@ -24,7 +24,7 @@ const Navbar = ({
             <a onClick={scrollToIntroduce}>
               <LiaHomeSolid />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px] text-blue-400  text-zinc-500  transition duration-300">
                 Home
             </span>
           </div>
@@ -32,7 +32,7 @@ const Navbar = ({
             <a onClick={scrollToAbout}>
               <LiaUserSolid />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px] text-blue-400  text-zinc-500  transition duration-300">
                 About
             </span>
           </div>
@@ -40,7 +40,7 @@ const Navbar = ({
             <a onClick={scrollToSkills}>
               <LiaShapesSolid />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px] text-blue-400  text-zinc-500  transition duration-300">
                 Skills
             </span>
           </div>
@@ -48,7 +48,7 @@ const Navbar = ({
             <a onClick={scrollToProjects}>
               <IoGridOutline />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px] text-blue-400  text-zinc-500  transition duration-300">
                 Projects
             </span>
           </div>
@@ -56,7 +56,7 @@ const Navbar = ({
             <a onClick={scrollToExperiences}>
               <LiaBriefcaseSolid />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px] text-blue-400  text-zinc-500  transition duration-300">
                 Education
             </span>
           </div>
@@ -64,7 +64,7 @@ const Navbar = ({
             <a onClick={scrollToContact}>
               <LiaEnvelopeSolid />
             </a>
-            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-zinc-500  transition duration-300">
+            <span class="hidden left-[45px] group-hover:block absolute inset-0 text-[20px]  text-blue-400  transition duration-300">
                 Contact
             </span>
           </div>

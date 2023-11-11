@@ -19,7 +19,6 @@ const Contact = () => {
                 setIsLoading(false);
                 toast.success('Email has been sent successfully!');
                 console.log(result);
-                
             },
             (error) => {
                 setIsLoading(false);
@@ -36,7 +35,7 @@ const Contact = () => {
                 <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-800 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaEnvelope></FaEnvelope>
                     masud.39cu@gmail.com
                 </h4>
-                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-800 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone/>
+                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-800 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone />
                     +8801518372751
                 </h4>
                 <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="1000">
@@ -83,7 +82,7 @@ const Contact = () => {
                     />
                 </form>
             </div>
-            <Toaster/>
+            <Toaster />
         </div>
     );
 };
