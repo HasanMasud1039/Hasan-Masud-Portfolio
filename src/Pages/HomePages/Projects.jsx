@@ -133,7 +133,9 @@ const Projects = () => {
                           <form method="dialog">
                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-error">✕</button>
                           </form>
-                          <p className="py-4 text-black">{project.description}</p>
+                          <p className="py-2 text-center font-bold text-black">{project.name}</p>
+                          <p className="py-2 text-black">{project.description}</p>
+                          
                         </div>
                       </dialog>
                     </div>
