@@ -16,8 +16,8 @@ const Navbar = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <div className="hidden  md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full fixed ">
+    <div className='relative'>
+      <div className="hidden absolute md:block top-1/4 right-[14%] transform-translate-y-1/2 translate-x-full lg:fixed ">
         <div className="text-3xl text-white border border-violet-800 rounded-full space-y-5 px-5 py-8">
 
           <div id="introduce" className="hover:text-primary cursor-pointer relative group">
@@ -83,7 +83,7 @@ const Navbar = ({
           <HiBars3 />
         </div>
         {isOpen && (
-          <div className="fixed top-0 left-0 bg-zinc-300 rounded-xl font-semibold opacity-90">
+          <div className="fixed top-0 left-0 bg-zinc-300 rounded-xl font-semibold opacity-90 ">
             <div>
               <div
                 className="absolute top-4 right-2 text-3xl"

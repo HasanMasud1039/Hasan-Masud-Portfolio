@@ -13,7 +13,7 @@ const Main = () => {
             <div className='mt-8 md:block hidden'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='h-min-screen ml-12 w-[90%]'>
+            <div className='h-min-screen md:ml-12 md:w-[90%]'>
                 <Home></Home>
             </div>
 

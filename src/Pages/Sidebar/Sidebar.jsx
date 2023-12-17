@@ -57,7 +57,7 @@ const Sidebar = () => {
 
           <div className="w-full flex justify-center mb-7 ">
             <a
-              href="https://drive.google.com/file/d/1u8u9HZwlCMFj3tVZpsYoUMZMDq_VvRbK/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-w_hhi9uYDgcYYvDvHSNEhoa4G7jTabi/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="w-full flex justify-center "
