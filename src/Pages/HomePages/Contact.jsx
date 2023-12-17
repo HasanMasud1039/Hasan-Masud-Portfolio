@@ -9,6 +9,7 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa';
 const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
     const form = useRef();
+    const emailAddress = 'masud.39cu@gmail.com';
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -32,10 +33,11 @@ const Contact = () => {
         </div>
             <div className="pt-[60px] pb-[90px] ">
 
-                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-800 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaEnvelope></FaEnvelope>
-                    masud.39cu@gmail.com
+                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-500 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaEnvelope></FaEnvelope>
+                <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                    
                 </h4>
-                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-800 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone />
+                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-500 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone />
                     +8801518372751
                 </h4>
                 <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="1000">

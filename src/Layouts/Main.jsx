@@ -8,15 +8,13 @@ import ParticleBackground from '../Pages/ParticleBackground/ParticleBackground';
 
 const Main = () => {
     return (
-        <div className='main md:pt-8 md:max-w-[82%] mx-auto md:px-2 bg-black text-white '>
-            
+        <div className='main md:pt-8 md:max-w-[82%] w-full mx-auto md:px-2 bg-black text-white'>
             <div className='mt-8 md:block hidden'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='h-min-screen md:ml-12 md:w-[90%]'>
+            <div className='h-min-screen md:ml-12 md:w-[90%] w-full'>
                 <Home></Home>
             </div>
-
         </div>
     );
 };

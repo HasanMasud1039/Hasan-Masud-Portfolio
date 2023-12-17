@@ -50,7 +50,7 @@ const Education = () => {
             <div className='mt-8'>
                 <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 text-white btn-outline'><LiaBriefcaseSolid className='text-2xl' />Education & Certification</button>
             </div>
-            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-800 uppercase'>Education</h1>
+            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-600 uppercase'>Education</h1>
 
             <div className='font-bold md:text-lg'>
                 <div>
@@ -60,19 +60,19 @@ const Education = () => {
                                 <div className="flex">
                                     <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-violet-800 group-hover:bg-primary"></div>
 
-                                    <p className="text-emerald-800  mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{education.date}</p>
+                                    <p className="text-emerald-600  mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{education.date}</p>
                                 </div>
 
                                 <div className="ml-14 mb-12 mt-2 w-fit">
                                     <h4 className="mb-1.5 section-subtitle">{education.title}</h4>
-                                    <a href={education.link} className="mb-3 text-blue-700">{education.company_name}</a>
+                                    <a href={education.link} className="mb-3 text-blue-600">{education.company_name}</a>
                                 </div>
                             </li>
                         ))}
                     </ol>
                 </div>
             </div>
-            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-800 uppercase'>Certification</h1>
+            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-600 uppercase'>Certification</h1>
             <div className='font-bold md:text-lg'>
                 <div>
                     <ol className="border-l border-emerald-800">
@@ -81,16 +81,16 @@ const Education = () => {
                                 <div className="flex">
                                     <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-violet-800 group-hover:bg-primary"></div>
 
-                                    <p className="text-emerald-800 mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{certification.date}</p>
+                                    <p className="text-emerald-600 mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{certification.date}</p>
                                 </div>
 
                                 <div className="ml-14 mb-12 mt-2 w-fit">
                                     <div className='flex gap-4'>
                                         <h4 className="mb-1.5 section-subtitle">{certification.title}</h4>
 
-                                        <a href={certification.certificateLink} className="mb-3 text-blue-700"><FaArrowUpRightFromSquare /></a>
+                                        <a href={certification.certificateLink} className="mb-3 text-blue-600"><FaArrowUpRightFromSquare /></a>
                                     </div>
-                                    <a href={certification.link} className="mb-3 text-blue-700">{certification.company_name}</a>
+                                    <a href={certification.link} className="mb-3 text-blue-600">{certification.company_name}</a>
                                 </div>
                             </li>
                         ))}
