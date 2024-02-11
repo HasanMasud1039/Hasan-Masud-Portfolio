@@ -10,6 +10,7 @@ import Education from '../HomePages/Education';
 import Contact from '../HomePages/Contact';
 import Navbar from '../Navbar/Navbar';
 import ParticleBackground from '../ParticleBackground/ParticleBackground';
+import Experience from '../HomePages/Experience';
 
 AOS.init();
 
@@ -19,15 +20,15 @@ function Home() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const experiencesRef = useRef(null);
-  // const educationRef = useRef(null); 
+  const educationRef = useRef(null); 
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <div className="relative rounded-2xl py-6 flex justify-center bg-black md:mx-8 pr-24 md:pr-0"> 
-      <div className="grid sm:grid-cols-1 lg:grid-cols-11 w-full ml-8 md:mx-2">
+    <div className="relative rounded-2xl py-6 flex justify-center bg-black md:mx-8 md:pr-0"> 
+      <div className="grid sm:grid-cols-1 lg:grid-cols-11 md:w-full ml-8 md:mx-2">
         <div className="lg:col-span-3 md:mt-8 mt-4 md:hidden block mx-auto flex justify-center px-4">
           <Sidebar />
         </div>
@@ -46,11 +47,11 @@ function Home() {
             <Projects />
           </div>
           <div ref={experiencesRef} className='mt-20'>
-            <Education />
+            <Experience />
           </div>{' '}
-          {/* <div ref={educationRef}>
+          <div ref={educationRef}>
             <Education />
-          </div> */}
+          </div>
           <div ref={contactRef} className='mt-20'>
             <Contact />
           </div>
@@ -62,7 +63,7 @@ function Home() {
             scrollToSkills={() => scrollToSection(skillsRef)}
             scrollToProjects={() => scrollToSection(projectsRef)}
             scrollToExperiences={() => scrollToSection(experiencesRef)}
-            // scrollToEducation={() => scrollToSection(educationRef)}
+            scrollToEducation={() => scrollToSection(educationRef)}
             scrollToContact={() => scrollToSection(contactRef)}
           />
         </div>

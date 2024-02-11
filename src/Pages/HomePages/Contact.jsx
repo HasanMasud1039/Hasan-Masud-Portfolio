@@ -4,7 +4,8 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'react-hot-toast';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
-
+import { MdMyLocation } from "react-icons/md";
+import { MdOutlineHomeWork } from "react-icons/md";
 
 const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -29,16 +30,22 @@ const Contact = () => {
     };
     return (
         <div><div className='mt-8'>
-            <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 text-white btn-outline'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
+            <button className='flex items-center gap-4 py-2 px-4 border-b-2 font-bold md:text-lg rounded-2xl border-emerald-800 text-white btn-outline uppercase'><LiaEnvelopeSolid className='text-2xl' />Contact</button>
         </div>
             <div className="pt-[60px] pb-[90px] ">
 
-                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-500 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaEnvelope></FaEnvelope>
+                <h4 className="flex md:px-8 gap-4 inset-0 text-xl pb-8 text-[#7123F9] font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaEnvelope></FaEnvelope>
                 <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
                     
                 </h4>
-                <h4 className="flex  gap-4 inset-0 text-xl pb-8 text-violet-500 font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone />
+                <h4 className="flex md:px-8 gap-4 inset-0 text-xl pb-8 text-[#7123F9] font-semibold" data-aos="fade-left" data-aos-duration="1000"> <FaPhone />
                     +8801518372751
+                </h4>
+                <h4 className="flex md:px-8 gap-4 inset-0 text-xl pb-8 text-[#7123F9] font-semibold" data-aos="fade-left" data-aos-duration="1000"> <MdMyLocation className='text-2xl'/>
+                    Dhakkhinkhan, Uttara, Dhaka, Bangladesh.
+                </h4>
+                <h4 className="flex md:px-8 gap-4 inset-0 text-xl pb-8 text-[#7123F9] font-semibold" data-aos="fade-left" data-aos-duration="1000"> <MdOutlineHomeWork className='text-2xl'/>
+                    Khilmogal, Rangunia, Chattogram, Bangladesh.
                 </h4>
                 <form ref={form} onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="1000">
                     <div className="flex flex-col lg:flex-row w-full md:px-8 px-2 gap-4">
@@ -79,7 +86,7 @@ const Contact = () => {
                     <input
                         type="submit"
                         value={isLoading ? 'Sending...' : 'SEND MESSAGE'}
-                        className="bg-violet-800 hover:bg-emerald-800 p-3 flex justify-center mx-auto  rounded-2xl cursor-pointer text-white md:font-semibold md:w-[30%] w-[50%]"
+                        className="bg-[#630CF9] hover:bg-emerald-800 p-3 flex justify-center mx-auto  rounded-2xl cursor-pointer text-white md:font-semibold md:w-[30%] w-[50%]"
                         disabled={isLoading}
                     />
                 </form>

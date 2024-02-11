@@ -6,13 +6,13 @@
     transition: filter 300ms;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 1em #06f5cdaa);
   }
-  .logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-  }
+  /* .logo.react:hover {
+    filter: drop-shadow(0 0 1em #89d7edaa);
+  } */
   
-.circularText {
+/* .circularText {
     animation: rotateText 20s linear infinite;
   }
   .circularText span {
@@ -22,7 +22,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     transform-origin: 0 110px;
-  }
+  } */
   @keyframes rotateText {
     0% {
       transform: rotate(360deg);
@@ -30,4 +30,66 @@
     100% {
       transform: rotate(0deg);
     }
+  }
+
+
+  .icons{
+    /* display: flex; */
+    margin: 20px 0;
+  }
+  .social li{
+    position: relative;
+    list-style: none;
+    height: 60px;
+    width: 60px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: hsl(0, 0%, 0%);
+    cursor: pointer;
+    box-shadow: -3px 1px 6px #c181e973,
+                3px 3px 5px rgba(64, 234, 169, 0.288);
+  }
+
+  .second li a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #1c1d1e;
+    font-size: 20px;
+    box-shadow: inset -2px -2px 4px #4b484873,
+                inset 2px 2px 2px rgba(94,104,121,0.288);
+  }
+  .second li.shadow-2 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45px;
+    width: 45px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #000710;
+    font-size: 20px;
+    box-shadow: inset -2px -2px 4px #4b484873,
+                inset 2px 2px 2px rgba(94,104,121,0.288);
+  }
+  li:nth-child(1).fill-color a{
+    color: #5277e8;
+  }
+  li:nth-child(2).fill-color a{
+    color: #cad5dc;
+  }
+  li:nth-child(3).fill-color a{
+    color: #203ee5;
+  }
+  li:nth-child(4).fill-color a{
+    color: #e72323;
+  }
+  li:nth-child(5).fill-color a{
+    color: #333;
   }

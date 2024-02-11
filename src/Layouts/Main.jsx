@@ -12,7 +12,7 @@ const Main = () => {
             <div className='mt-8 md:block hidden'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='h-min-screen md:ml-12 md:w-[90%] w-full'>
+            <div className='h-min-screen md:ml-14 md:w-[95%] w-full'>
                 <Home></Home>
             </div>
         </div>

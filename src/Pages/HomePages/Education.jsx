@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import { LiaBriefcaseSolid } from 'react-icons/lia';
+import { MdOutlineCastForEducation } from "react-icons/md";
 
 const Education = () => {
     const educations = [
@@ -9,7 +9,7 @@ const Education = () => {
             title: 'M.S. in Computer Science & Engineering',
             company_name: 'University of Chittagong, Bangladesh',
             link: 'https://cu.ac.bd/',
-            date: 'Jan 2020 - Dec 2022',
+            date: 'Feb 2020 - Oct 2023',
         },
         {
             id: '2',
@@ -17,6 +17,20 @@ const Education = () => {
             company_name: 'University of Chittagong, Bangladesh',
             link: 'https://cu.ac.bd/',
             date: 'Jan 2015 - May 2019',
+        },
+        {
+            id: '3',
+            title: 'H.S.C.',
+            company_name: 'Kulgaon City Corp. College, Chittagong, Bangladesh',
+            link: 'https://kccc.edu.bd/',
+            date: 'Jul 2012 - Mar 2014',
+        },
+        {
+            id: '1',
+            title: 'S.S.C.',
+            company_name: 'Rangunia Khil Mogal Rashik High School, Chittagong, Bangladesh',
+            link: 'https://www.sohopathi.com/rangunia-khilmogal-rashik-high-school/',
+            date: '2010 - 2012',
         },
     ];
     const certifications = [
@@ -48,7 +62,7 @@ const Education = () => {
     return (
         <div>
             <div className='mt-8'>
-                <button className='btn btn-md font-bold md:text-lg rounded-2xl border-emerald-800 hover:bg-violet-800 text-white btn-outline'><LiaBriefcaseSolid className='text-2xl' />Education & Certification</button>
+                <button className='flex items-center gap-4 py-2 px-4 border-b-2 font-bold md:text-lg rounded-2xl border-emerald-800 text-white btn-outline uppercase'><MdOutlineCastForEducation className='text-2xl' />Education & Certification</button>
             </div>
             <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-600 uppercase'>Education</h1>
 
@@ -58,39 +72,39 @@ const Education = () => {
                         {educations.map((education) => (
                             <li key={education.id} className="group" data-aos="fade-left" data-aos-duration="1000">
                                 <div className="flex">
-                                    <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-violet-800 group-hover:bg-primary"></div>
+                                    <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-[#9204BE] group-hover:bg-primary"></div>
 
-                                    <p className="text-emerald-600  mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{education.date}</p>
+                                    <p className="text-emerald-600  mb-3 -mt-1.5 ml-[52px] group-hover:text-[primary]">{education.date}</p>
                                 </div>
 
                                 <div className="ml-14 mb-12 mt-2 w-fit">
                                     <h4 className="mb-1.5 section-subtitle">{education.title}</h4>
-                                    <a href={education.link} className="mb-3 text-blue-600">{education.company_name}</a>
+                                    <a href={education.link} className="mb-3 text-[#6F75FA]">{education.company_name}</a>
                                 </div>
                             </li>
                         ))}
                     </ol>
                 </div>
             </div>
-            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-emerald-600 uppercase'>Certification</h1>
+            <h1 className='py-6 md:text-3xl text-xl font-bold flex justify-center text-[#03D05D] uppercase'>Certification</h1>
             <div className='font-bold md:text-lg'>
                 <div>
                     <ol className="border-l border-emerald-800">
                         {certifications.map((certification) => (
                             <li key={certification.id} className="group" data-aos="fade-left" data-aos-duration="1000">
                                 <div className="flex">
-                                    <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-violet-800 group-hover:bg-primary"></div>
+                                    <div className="-ml-[6px] h-[12px] w-[12px] rounded-full bg-[#9204BE] group-hover:bg-primary"></div>
 
-                                    <p className="text-emerald-600 mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{certification.date}</p>
+                                    <p className="text-[#03D05D]  mb-3 -mt-1.5 ml-[52px] group-hover:text-primary">{certification.date}</p>
                                 </div>
 
                                 <div className="ml-14 mb-12 mt-2 w-fit">
                                     <div className='flex gap-4'>
                                         <h4 className="mb-1.5 section-subtitle">{certification.title}</h4>
 
-                                        <a href={certification.certificateLink} className="mb-3 text-blue-600"><FaArrowUpRightFromSquare /></a>
+                                        <a href={certification.certificateLink} className="mb-3 text-[#6F75FA]"><FaArrowUpRightFromSquare /></a>
                                     </div>
-                                    <a href={certification.link} className="mb-3 text-blue-600">{certification.company_name}</a>
+                                    <a href={certification.link} className="mb-3 text-[#6F75FA]">{certification.company_name}</a>
                                 </div>
                             </li>
                         ))}

@@ -1,5 +1,6 @@
 .main{
-    width: fit-content;
+    /* width: fit-content; */
+    width: '100%';
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
